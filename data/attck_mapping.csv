@@ -1,0 +1,5 @@
+control,intent,technique
+private_endpoints_only,reduce exfil paths,T1041 Exfiltration Over C2 Channel
+mfa_required,resist credential abuse,T1078 Valid Accounts
+explicit_allow_per_principal,limit lateral movement,T1021 Remote Services
+step_up_on_anomaly,continuous verification,T1562 Impair Defenses

@@ -1,0 +1,26 @@
+{
+  "synthetic_assets.csv": {
+    "asset_id": "string",
+    "asset_type": "string",
+    "owner_team": "string",
+    "region": "string",
+    "sensitivity": "public|internal|confidential|restricted",
+    "has_pii": "bool",
+    "has_phi": "bool",
+    "encryption": "none|at_rest|in_transit|both",
+    "internet_exposed": "bool",
+    "identity_plane": "entra_okta|iam_workload|service_mesh|api_gateway",
+    "created_date": "YYYY-MM-DD",
+    "retention_days": "int"
+  },
+  "synthetic_access_events.csv": {
+    "ts": "ISO8601",
+    "asset_id": "string (FK to assets)",
+    "principal_type": "human|workload|service",
+    "mfa": "bool",
+    "device_compliant": "bool",
+    "network_trusted": "bool",
+    "geo_anomaly": "bool",
+    "action": "read|write|list|admin|delete_attempt"
+  }
+}
